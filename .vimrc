@@ -24,12 +24,21 @@ Plugin 'ctrlp.vim'
 Plugin 'EasyGrep'
 Plugin 'bling/vim-airline'
 Plugin 'vim-ruby/vim-ruby'
-"Bundle 'ZenCoding.vim'
+" Bundle 'ZenCoding.vim'
 Plugin 'The-NERD-tree'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
-"Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-easymotion'
+
+" About snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" Optional:
+Plugin 'honza/vim-snippets'
+" vim-react-snippets:
+Plugin 'justinj/vim-react-snippets'
 
 call vundle#end()
 
