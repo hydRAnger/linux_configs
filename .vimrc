@@ -17,14 +17,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " vim-scripts repos
 Plugin 'ctrlp.vim'
 Plugin 'EasyGrep'
 Plugin 'bling/vim-airline'
 Plugin 'vim-ruby/vim-ruby'
-" Bundle 'ZenCoding.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'The-NERD-tree'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
