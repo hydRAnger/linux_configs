@@ -111,3 +111,4 @@ fi
 source ~/go_profile.sh
 PATH="$HOME/software/node/bin:$PATH"
 export EDITOR=vim
+PATH="$PATH:/home/vagrant/software/flow/"
