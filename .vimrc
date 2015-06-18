@@ -1,9 +1,3 @@
-" you can find below.  If you wish to change any of those settings, you should
-" do it in this file (/etc/vim/vimrc), since debian.vim will be overwritten
-" everytime an upgrade of the vim packages is performed.  It is recommended to
-" make changes after sourcing debian.vim since it alters the value of the
-" 'compatible' option.
-
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
@@ -44,43 +38,9 @@ call vundle#end()
 
 filetype plugin indent on    " required!
 
-" Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
-" options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
-
-" Vim5 and later versions support syntax highlighting. Uncommenting the next
-" line enables syntax highlighting by default.
 if has("syntax")
   syntax on
 endif
-
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-"set background=dark
-
-" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
-
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-"if has("autocmd")
-"  filetype plugin indent on
-"endif
-
-" The following are commented out as they cause vim to behave a lot
-" differently from regular Vi. They are highly recommended though.
-"set showcmd            " Show (partial) command in status line.
-"set showmatch          " Show matching brackets.
-"set ignorecase         " Do case insensitive matching
-"set smartcase          " Do smart case matching
-"set incsearch          " Incremental search
-"set autowrite          " Automatically save before commands like :next and :make
-"set hidden             " Hide buffers when they are abandoned
-"set mouse=a            " Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -111,24 +71,12 @@ set incsearch "开启实时搜索功能
 set ignorecase "忽略大小写
 set smartcase "如果搜索模式包含大写字母，忽略ignorecase
 
-"set errorbells "关闭错误信息报警
-"set novisualbell "关闭代替名叫的可视响铃
-"set guifont=YaHei\ Cosolas\ Hyrid:h11 "设置字体和大小
-"set linespace=4 "设置行间距
-
 "highlight current line: on in normal mode, off in insert mode
 set cul
 autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
 
 "cursor shape:
-"let &t_EI .= "\<Esc>[6 q""]"
-"autocmd InsertEnter * let &t_EI .= "\<Esc>[6 q""]"
-"autocmd InsertLeave * let &t_EI .= "\<Esc>[2 q""]"
-"let g:togglecursor_default = "block"
-"let g:togglecursor_insert = "line"
-"let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let &t_SI = "\<Esc>[6 q"
 let &t_EI = "\<Esc>[2 q"
 
@@ -160,15 +108,17 @@ imap <c-u> <ESC>bgUwea
 inoremap <Esc>/ <C-x><C-o>
 set omnifunc=syntaxcomplete#Complete "设置补全
 
+" for scrooloose/syntastic
+let g:syntastic_check_on_open = 1
+" " javacript
+let g:syntastic_javascript_checkers = ['eslint', 'flow']
+
+
 " for vim-ruby
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
-
-" for EasyGrep
-let g:EasyGrepFilesToExclude="/home/hydra/icemaple_loc/mapleseed/jadeite_tech/server/ruby/tags"  " not usable if I use ag for searching
-
 
 " for airline
 set noshowmode
@@ -194,4 +144,3 @@ let g:ctrlp_open_multiple_files = 't'
 
 " for easymotion
 nmap s <Plug>(easymotion-s2)
-nmap t <Plug>(easymotion-t2)
