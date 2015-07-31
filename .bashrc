@@ -109,6 +109,9 @@ fi
 #source ~/icemaple_rc_vagrant.sh
 
 source ~/go_profile.sh
-PATH="$HOME/software/node/bin:$PATH"
 export EDITOR=vim
 PATH="$PATH:/home/vagrant/software/flow/"
+PATH="$PATH:/home/vagrant/software/nvm/"
+
+export NVM_DIR="/home/vagrant/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
