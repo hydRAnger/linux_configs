@@ -110,7 +110,7 @@ set omnifunc=syntaxcomplete#Complete "设置补全
 
 " for scrooloose/syntastic
 let g:syntastic_check_on_open = 1
-" " javacript
+" " for javacript
 let g:syntastic_javascript_checkers = ['eslint', 'flow']
 
 
