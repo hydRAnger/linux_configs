@@ -17,6 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlp.vim'
 Plugin 'EasyGrep'
 Plugin 'bling/vim-airline'
+Plugin 'mkitt/tabline.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/syntastic'
 Plugin 'The-NERD-tree'
@@ -123,8 +124,6 @@ filetype plugin on    " Enable filetype-specific plugins
 " for airline
 set noshowmode
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1 
-""let g:airline_powerline_fonts = 1
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 set t_Co=256 
