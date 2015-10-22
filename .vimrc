@@ -94,16 +94,16 @@ ca tm tabmove
 """""""""""""""""""""""""""""""""""""""""""
 " 自定义快捷键
 """""""""""""""""""""""""""""""""""""""""""
-nmap <leader>w :w!<cr>
-nmap <leader>q :q!<cr>
-nmap <leader>wq :wq!<cr>
+nnoremap <leader>w :w!<cr>
+nnoremap <leader>q :q!<cr>
+nnoremap <leader>wq :wq!<cr>
 
 " for vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 "" Insert Mode Mapping:
-imap <c-u> <ESC>bgUwea
+inoremap <c-u> <ESC>bgUwea
 
 "" 代码补全快捷键
 inoremap <Esc>/ <C-x><C-o>
@@ -130,7 +130,7 @@ set t_Co=256
 
 
 " for NERDTree
-nmap <leader>nt :NERDTree<CR>
+nnoremap <leader>nt :NERDTree<CR>
 
 " for CtrlP
 let g:ctrlp_open_new_file = 't'
@@ -142,4 +142,4 @@ let g:ctrlp_open_multiple_files = 't'
 "nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " for easymotion
-nmap s <Plug>(easymotion-s2)
+nnoremap s <Plug>(easymotion-s2)
