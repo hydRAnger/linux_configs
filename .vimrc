@@ -23,7 +23,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'The-NERD-tree'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
-" Bundle 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-easymotion'
 
 " About snippets
@@ -135,11 +134,6 @@ nnoremap <leader>nt :NERDTree<CR>
 " for CtrlP
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
-
-" for YouCompleteMe
-"nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-"nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-"nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " for easymotion
 nnoremap s <Plug>(easymotion-s2)
