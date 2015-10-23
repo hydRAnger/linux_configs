@@ -136,4 +136,4 @@ let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
 
 " for easymotion
-nnoremap s <Plug>(easymotion-s2)
+nmap s <Plug>(easymotion-s2)
