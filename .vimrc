@@ -137,3 +137,8 @@ let g:ctrlp_open_multiple_files = 't'
 
 " for easymotion
 nmap s <Plug>(easymotion-s2)
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Abbreviations
+"""""""""""""""""""""""""""""""""""""""""""
+iabbrev @@ armyiljfe@gmail.com
