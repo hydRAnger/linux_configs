@@ -96,6 +96,8 @@ ca tm tabmove
 nnoremap <leader>w :w!<cr>
 nnoremap <leader>q :q!<cr>
 nnoremap <leader>wq :wq!<cr>
+nnoremap H ^
+nnoremap L $
 
 " for vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
