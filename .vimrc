@@ -96,8 +96,11 @@ ca tm tabmove
 nnoremap <leader>w :w!<cr>
 nnoremap <leader>q :q!<cr>
 nnoremap <leader>wq :wq!<cr>
+" experiment
 nnoremap H ^
 nnoremap L $
+"" filetype
+autocmd Filetype javascript nnoremap <buffer> <leader>c I//<esc>
 
 " for vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
