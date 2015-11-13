@@ -115,4 +115,4 @@ PATH="$PATH:/home/vagrant/software/flow/"
 export NVM_DIR="/home/vagrant/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 . ~/.nvm/nvm.sh
-nvm use 4.1
+nvm use 5.0
