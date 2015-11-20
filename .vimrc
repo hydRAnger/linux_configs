@@ -140,7 +140,7 @@ nnoremap <leader>nt :NERDTree<CR>
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
 let g:ctrlp_user_command =
-      \ ['.git', 'cd %s && git ls-files . -co --exclude-standard']
+      \ 'find %s -type f | grep -v -P "\.jpg$|/tmp/"'
 
 " for easymotion
 nmap s <Plug>(easymotion-s2)
