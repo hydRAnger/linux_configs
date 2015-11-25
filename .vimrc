@@ -21,7 +21,7 @@ Plugin 'mkitt/tabline.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/syntastic'
 Plugin 'The-NERD-tree'
-Plugin 'digitaltoad/vim-jade'
+Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Lokaltog/vim-easymotion'
 
