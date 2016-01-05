@@ -110,7 +110,7 @@ fi
 
 source ~/go_profile.sh
 export EDITOR=vim
-PATH="$PATH:/home/vagrant/software/flow/"
+PATH="$PATH:/home/vagrant/software/flow/:/home/vagrant/software/mit-scheme/bin/"
 
 export NVM_DIR="/home/vagrant/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
