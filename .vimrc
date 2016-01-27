@@ -24,6 +24,7 @@ Plugin 'The-NERD-tree'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'jiangmiao/auto-pairs'
 
 " About snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -99,6 +100,8 @@ nnoremap <leader>wq :wq!<cr>
 " experiment
 nnoremap H ^
 nnoremap L $
+" toggle semicolon
+nnoremap ;; :s/\v(.)$/\=submatch(1)==';' ? '' : submatch(1).';'<CR>:noh<CR>
 "" filetype
 autocmd Filetype javascript nnoremap <buffer> <leader>c I//<esc>
 
@@ -109,14 +112,14 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "" Insert Mode Mapping:
 inoremap <c-u> <ESC>bgUwea
 
-"" 代码补全快捷键
+"" code complete
 inoremap <Esc>/ <C-x><C-o>
-set omnifunc=syntaxcomplete#Complete "设置补全
+set omnifunc=syntaxcomplete#Complete
 
 " for scrooloose/syntastic
 let g:syntastic_check_on_open = 1
 " " for javacript
-let g:syntastic_javascript_checkers = ['eslint', 'flow']
+let g:syntastic_javascript_checkers = ['eslint']
 
 
 " for vim-ruby
@@ -139,6 +142,7 @@ nnoremap <leader>nt :NERDTree<CR>
 " for CtrlP
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command =
       \ 'find %s -type f | grep -v -P "\.jpg$|/tmp/"'
 
